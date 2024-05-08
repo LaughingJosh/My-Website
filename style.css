@@ -9,9 +9,12 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  color: white; /* Couleur d'écriture */
-  background-color: #204020; /* Fond vert foncé */
+  background-image: url('Back.jpg');
+  background-size: cover; /* Ajuste l'image pour couvrir toute la zone du corps */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  background-attachment: fixed; /* Fixe l'image de fond lors du défilement */
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -39,7 +42,6 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-  background-color: #204020; /* Fond vert foncé */
 }
 
 .nav-links {
@@ -49,13 +51,13 @@ nav {
 }
 
 a {
-  color: white; /* Couleur d'écriture */
+  color: black;
   text-decoration: none;
   text-decoration-color: white;
 }
 
 a:hover {
-  color: lightgrey; /* Couleur d'écriture au survol */
+  color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
@@ -100,7 +102,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #204020; /* Fond vert foncé */
+  background-color: white;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -112,7 +114,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: white; /* Couleur d'écriture */
+  color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -153,11 +155,8 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  margin: 8vh 10rem; /* Increased margin between sections */
   box-sizing: border-box;
-  min-height: fit-content;
-  background-color: #204020; /* Fond vert foncé */
 }
 
 .section-container {
@@ -201,7 +200,6 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
-  color: white; /* Couleur d'écriture */
 }
 
 #socials-container {
@@ -232,22 +230,26 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
-  color: white; /* Couleur d'écriture */
 }
 
 .btn-color-1,
 .btn-color-2 {
-  border: white 0.1rem solid; /* Bordure blanche */
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
-  background: white; /* Fond blanc au survol */
-  color: #204020; /* Couleur d'écriture au survol */
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
 }
 
 .btn-color-1:hover {
-  background: black; /* Fond noir au survol */
+  background: rgb(0, 0, 0);
 }
 
 .btn-color-2 {
@@ -255,7 +257,7 @@ section {
 }
 
 .btn-color-2:hover {
-  border: white 0.1rem solid; /* Bordure blanche au survol */
+  border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 .btn-container {
@@ -272,6 +274,7 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  justify-content: center; /* Ajout pour centrer les conteneurs de projets */
 }
 
 .about-details-container {
@@ -297,9 +300,9 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white; /* Fond blanc */
+  background: white;
   border-radius: 2rem;
-  border: white 0.1rem solid; /* Bordure blanche */
+  border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
@@ -373,12 +376,12 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: white; /* Couleur d'écriture */
+  color: black;
 }
 
 .project-btn {
-  color: white; /* Couleur d'écriture */
-  border-color: white; /* Bordure blanche */
+  color: black;
+  border-color: rgb(163, 163, 163);
 }
 
 /* CONTACT */
@@ -388,16 +391,15 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
-  background-color: #204020; /* Fond vert foncé */
 }
 
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: white 0.1rem solid; /* Bordure blanche */
+  border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: white; /* Fond blanc */
+  background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -412,12 +414,10 @@ article .icon {
 
 .contact-info-container p {
   font-size: larger;
-  color: #204020; /* Couleur d'écriture */
 }
 
 .contact-icon {
   cursor: default;
-  fill: #204020; /* Couleur de remplissage */
 }
 
 .email-icon {
